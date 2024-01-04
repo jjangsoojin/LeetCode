@@ -11,6 +11,11 @@
  *     }
  * }
  */
+
+/*
+Balanced Binary Search Tree - 균형이진트리
+모든 노드의 왼쪽과 오른쪽 하위 트리의 높이가 최대 1만큼 차이가 날 수 있는 이진 트리다.
+*/
 public class Solution {
     public bool IsBalanced(TreeNode root) {
             int diff = CheckBalanced(root);

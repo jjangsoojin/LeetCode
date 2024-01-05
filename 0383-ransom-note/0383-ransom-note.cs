@@ -3,7 +3,7 @@ using System.Collections.Generic;
 public class Solution {
     public bool CanConstruct(string ransomNote, string magazine) {
          
-      Dictionary<char, int> ransomNoteFrequency = new Dictionary<char, int>();
+    Dictionary<char, int> ransomNoteFrequency = new Dictionary<char, int>();
     Dictionary<char, int> magazineFrequency = new Dictionary<char, int>();
 
     // ransomNote 문자열의 각 문자의 빈도수를 ransomNoteFrequency에 저장

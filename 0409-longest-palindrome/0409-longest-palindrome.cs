@@ -1,6 +1,6 @@
 public class Solution {
     public int LongestPalindrome(string s) {
-           int length = 0;
+        int length = 0;
         bool hasOddFrequency = false;
         Dictionary<char, int> charCount = new Dictionary<char, int>();
 

@@ -36,6 +36,7 @@ public class Solution {
          return max;
 */
      // O(n) 시간복잡도
+     // majority element는 n/2보다 많이 등장하는 원소를 의미 - 전체원소의 과반수를 초과
         
      int candidate = 0;
         int count = 0;

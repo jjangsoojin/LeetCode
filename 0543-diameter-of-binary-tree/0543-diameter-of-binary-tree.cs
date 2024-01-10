@@ -23,17 +23,14 @@ public class Solution {
 
         public int Depth(TreeNode node)
         {
-            if (node == null)
-                return 0;
+           if (node == null)
+    return 0;
 
+   int left = Depth(node.left);
+   int right = Depth(node.right);
+   diameter = Math.Max(diameter, left + right);
 
-            int left = Depth(node.left);
-            int right = Depth(node.right);
-
-            diameter = Math.Max(diameter, left + right);
-
-
-            return Math.Max(left,right) + 1;
+   return Math.Max(left, right) + 1;
         }
         
 }

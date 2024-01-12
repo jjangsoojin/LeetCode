@@ -32,7 +32,6 @@ public class Solution {
         */
         
         // 빠른 포인터가 리스트의 끝에 도달할 때, 느린 포인터는 중간에 위치하게 된다
-        
             ListNode slow = head;
             ListNode fast = head;
              

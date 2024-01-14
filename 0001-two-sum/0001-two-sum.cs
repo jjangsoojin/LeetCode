@@ -1,6 +1,7 @@
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {
-        
+        /*
+        // 기존에 풀었던 O(n2) 
        int[] num = new int[2];
            
                    for (int i = 0; i < nums.Length; i++)
@@ -18,6 +19,30 @@ public class Solution {
                 }
             }
             return num;
+*/
 
+        
+        public int[] TwoSum(int[] nums, int target)
+        {
+            Dictionary<int, int> dic = new Dictionary<int, int>();
+
+            int[] num = new int[2];
+
+
+            for(int i=0; i<nums.Length; i++)
+            {
+                int diff = target - nums[i];
+
+
+                if (dic.ContainsKey(diff))
+                {
+                    return new int[] { dic[diff],i};
+                }
+
+                dic[nums[i]] = i;
+
+            }
+
+            return nums;
         }
     }

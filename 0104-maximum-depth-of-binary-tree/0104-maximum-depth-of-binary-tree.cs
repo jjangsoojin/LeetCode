@@ -14,18 +14,9 @@
 public class Solution {
     public int MaxDepth(TreeNode root) {
         
-     int maxDepth = Depth(root);
-      
-      return maxDepth;
+        if (root == null)
+         return 0;
+
+         return Math.Max(MaxDepth(root.left), MaxDepth(root.right)) + 1;
   }
-
-  public int Depth(TreeNode root)
-  {
-  
-       if(root==null)
-     return 0;
-      
-      return Math.Max(Depth(root.left),Depth(root.right)) + 1;
-
-    }
 }
